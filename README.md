@@ -12,4 +12,14 @@ How to set up Jenkins on AWS EC2 step by step
 <br>
 <img src= "Imgs/ssh.png">
 
+> 3. Once you ssh into your EC2 machine, run the following commands:
+* sudo yum update –y (This command updates the Linux operating system)
+* sudo yum install java-1.8.0-openjdk-devel -y (This command installs the JAVA JDK which is use by Jenkins)
+* sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat/jenkins.repo (This command pulls Jenkins repo to our machine)
+* sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key (This command imports a key file from Jenkins-CI to enable installation from the package)
+*  sudo yum install jenkins -y (installing jenkins)
+* sudo systemctl start jenkins (starting jenkins service)
+* sudo systemctl enable jenkins (enabling the jenkins service across server restarts)
+* sudo systemctl status jenkins (ensuring jenkins service is up and running)
+
 
