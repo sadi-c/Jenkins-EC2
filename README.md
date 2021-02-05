@@ -6,3 +6,10 @@ How to set up Jenkins on AWS EC2 step by step
 
 <br>
 <img src= "Imgs/sg.png">
+
+> 2. SSH into your EC2 machine 
+
+<br>
+<img src= "Imgs/ssh.png">
+
+
