@@ -12,6 +12,7 @@ How to set up Jenkins on AWS EC2 step by step
 <br>
 <img src= "Imgs/ssh.png">
 <br>
+
 > 3. Once you ssh into your EC2 machine, run the following commands:
 * sudo yum update –y (This command updates the Linux operating system)
 * sudo yum install java-1.8.0-openjdk-devel -y (This command installs the JAVA JDK which is use by Jenkins)
@@ -22,8 +23,15 @@ How to set up Jenkins on AWS EC2 step by step
 * sudo systemctl enable jenkins (enabling the jenkins service across server restarts)
 * sudo systemctl status jenkins (ensuring jenkins service is up and running)
 <br>
+
 > 4. The next step is to go to port 8080 of your server using your public IP address. If the following steps done correctly, you should see the following:
 <br>
 <img src= "Imgs/unlock.png">
 <br>
 
+> 5. To unlock the initial admin password go back to your command line and run the command: 
+* sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+> This command will return password back to you, then paste that password on to the web server
+<br>
+<img src= "Imgs/complete.png">
+<br>
