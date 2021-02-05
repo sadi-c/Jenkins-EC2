@@ -31,7 +31,10 @@ How to set up Jenkins on AWS EC2 step by step
 
 > 5. To unlock the initial admin password go back to your command line and run the command: 
 * sudo cat /var/lib/jenkins/secrets/initialAdminPassword
-> This command will return password back to you, then paste that password on to the web server
+> This command will return password back to you, then paste that password on to the Jenkins server
+<br>
+
+> 6. After sucessfully completing step 5 you should be able to continue to setting up your Jenkins server
 <br>
 <img src= "Imgs/complete.png">
 <br>
