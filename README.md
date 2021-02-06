@@ -1,5 +1,5 @@
 # Jenkins-EC2
-How to set up Jenkins on AWS EC2 in step by step?
+How to Set Up Jenkins on AWS EC2: Step by Step
 
 
 ```1. Launch a EC2 on a public subnet and make sure that you have a SSH rule for yourself and also open up port 8080 on the server so that you can access Jenkins from the web.```
